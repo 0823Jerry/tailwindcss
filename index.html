@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+    module.exports = {
+        theme: {
+            spacing: {
+                '1': '8px',
+                '2': '12px',
+                '3': '16px',
+                '4': '24px',
+                '5': '32px',
+                '6': '48px',
+            }
+        }
+    }
+    </script>
+</head>
+<body class="p-10">
+    <p class="text-sky-600 font-bold">
+        Customization
+    </p>
+    <h3 class="font-bold text-3xl">
+        Customizing Spacing
+    </h3>
+    <p class="">
+        Customizing the default spacing and sizing scale for your project.
+    </p>
+    <br>
+    <hr>
+    <p class="">
+        Customizing the <span class="cursor-pointer font-bold underline decoration-sky-500 hover:decoration-2">default spacing and sizing</span> scale for your project.
+    </p>
+    <div class="bg-sky-900 text-cyan-200 rounded-xl">
+        <div class="pt-5 px-3 pb-3 border-b-2">
+            tailwind.config.js
+        </div>
+        <pre class="pt-3 px-3 pb-8">
+/** @type {import('tailwindcss').config} */
+    module.exports = {
+    theme:{
+        spacing:{
+        '1': '8px',
+        '2': '12px',
+        '3': '16px',
+        '4': '24px',
+        '5': '32px',
+        '6': '48px',
+        }
+    }
+}
+
+        </pre>
+    </div>
+    <p class="text-center font-bold text-sky-500 m-5">
+        Showcase
+    </p>
+    <pre class="text-5xl text-center font-bold font-sans">
+You can build anything 
+with Tailwind CSS.
+    </pre>
+    <pre class="text-center font-sans text-xl text-slate-500">
+Well not quite anything, like you can't build a spaceship with it. But you can
+definitely build the website for the spaceship -- <span class="text-slate-950 font-bold underline decoration-sky-200">NASA did</span>
+    </pre>
+</body>
+</html>
